@@ -1,4 +1,0 @@
-
-
-
-//Create mongoose user Schema
