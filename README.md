@@ -6,9 +6,12 @@
 
 wachana dana gannna onene
 
-Node > is a framework for web dev
-npm > node package manager
-package> js file set 1k . mokak hari task 1k lesi wenna hadapu.
+Node : is a framework for web dev
+
+npm : node package manager ( meken thama node packages manage karnne, e kiynne run krnne, install krnne okkoma)
+
+
+package : js file set 1k . mokak hari task 1k lesi wenna hadapu.
 we can install any package as our need. using `npm i package-name`
 
 >Popular packages.
