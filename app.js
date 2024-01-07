@@ -16,6 +16,11 @@ const URL = process.env.MONGODB_URL;
 
 mongoose.connect(URL);
 
+//Create A route to See the app is working
+
+//Create A route to Create A user
+// /user
+
 const connection = mongoose.connection;
 
 connection.once("open", () => {
