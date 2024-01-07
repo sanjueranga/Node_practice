@@ -1,10 +1,27 @@
 const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+
+const envPath = path.resolve(__dirname, ".", ".env");
+dotenv.config({ path: envPath });
+
 const app = express();
+const PORT = process.env.PORT || 8080;
 
-const userRouter = require("./routes/UserRoute.js");
-app.use("/user", userRouter);
+app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 8060;
+const URL = process.env.MONGODB_URL;
+
+mongoose.connect(URL);
+
+const connection = mongoose.connection;
+
+connection.once("open", () => {
+  console.log("MongoDB connection success");
+});
+
 app.listen(PORT, () => {
   console.log("Server is up and running on : " + PORT);
 });
