@@ -1,7 +1,5 @@
 # Node Backend Api
 
-
-
 ### Before Everything
 
 wachana dana gannna onene
@@ -10,17 +8,16 @@ Node : is a framework for web dev
 
 npm : node package manager ( meken thama node packages manage karnne, e kiynne run krnne, install krnne okkoma)
 
-
 package : js file set 1k . mokak hari task 1k lesi wenna hadapu.
 we can install any package as our need. using `npm i package-name`
 
->Popular packages.
+> Popular packages.
 
+#### mongoose - to use MongoDb easily with js.
 
-#### mongoose   - to use MongoDb easily with js.
-#### express   -to create the Node server
+#### express -to create the Node server
 
-when we need to do something in our app. 
+when we need to do something in our app.
 
 like ,to use mongoDB in our app.
 serach how to use mongo with node app.
@@ -28,16 +25,15 @@ they will say use the mongoose .
 
 and we can go to the `documentation`
 
-seeieng any documentation we can get an idea how to use. 
+seeieng any documentation we can get an idea how to use.
 any tool.
 
-node packages, Node, git, anthing. 
-when u use that to troubleshoot. 
+node packages, Node, git, anthing.
+when u use that to troubleshoot.
 
 we can search the error directly and go to stackoverflow. or chatgpt. both will work . Try to read error messages.
 
 e message eke eka wachanaak hari api aluthen dapu deyak pennwd blnn.
-
 
 Directories = Folders
 
@@ -45,9 +41,7 @@ Backend dev vlt codingma neme one. error fix krnn. hariyt chtgpt krnn, git, cmd 
 
 me kiypu wachana utubut balnnon.
 
-
-## Create Node The App
-
+# Create Node The App
 
 > Create a new folder , "backend" or, anything
 
@@ -79,7 +73,7 @@ app.listen(PORT, () => {
 });
 ```
 
-### install necessarry node modules
+# install necessarry node modules
 
 ```bash
 npm i express // create the server
@@ -97,6 +91,8 @@ Now we create other neseccry files for just one service.
 > models>userModel.js
 > routes>userRoutes.js
 
+# Structure
+
 ### Controller
 
 to handle req, res. ( here we dont have service layer so we handle buisness logics in controller)
@@ -113,11 +109,17 @@ each route calls a controller function.
 so when we call a foute through postman.
 a controller function will be called.
 
+# First Route
+
 routes are created in userRouter.js.
 but that should be connected to the app.js
 
 _ask chatgpt_
 `in a node app . when we have a userRoute.js. how do we include it in app.js`
+
+# Callin Api Endpoints
+
+endpoint 1k kiynne request 1k gahala mon hari gann puluwn route ekat, e okkogem ekathuw.
 
 #### now ,suppose we need to get all the users from db.
 
@@ -125,12 +127,16 @@ we need to call this in postman
 
 `{API}/users`
 
+# First controller
+
 _ask chatgpt_
 `to get all users using {API}/users, create the necessary code in userRouter.js , using a controller function`
 
 This will give the correct route.js
 
 but the controller function is bit wrong.(because we dont have users yet)
+
+# Model
 
 now we have to create our user model.
 
@@ -156,6 +162,8 @@ u'll get empty array. since we didnt create any.
 
 u might get 404 error . not found . because of the differences like. ,/users/ //users/ .
 edit the url then
+
+# Posting
 
 ### now we have to create users in db.
 
