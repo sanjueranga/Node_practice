@@ -1,6 +1,50 @@
 # Node Backend Api
 
+
+
+### Before Everything
+
+wachana dana gannna onene
+
+Node > is a framework for web dev
+npm > node package manager
+package> js file set 1k . mokak hari task 1k lesi wenna hadapu.
+we can install any package as our need. using `npm i package-name`
+
+>Popular packages.
+
+
+#### mongoose   - to use MongoDb easily with js.
+#### express   -to create the Node server
+
+when we need to do something in our app. 
+
+like ,to use mongoDB in our app.
+serach how to use mongo with node app.
+they will say use the mongoose .
+
+and we can go to the `documentation`
+
+seeieng any documentation we can get an idea how to use. 
+any tool.
+
+node packages, Node, git, anthing. 
+when u use that to troubleshoot. 
+
+we can search the error directly and go to stackoverflow. or chatgpt. both will work . Try to read error messages.
+
+e message eke eka wachanaak hari api aluthen dapu deyak pennwd blnn.
+
+
+Directories = Folders
+
+Backend dev vlt codingma neme one. error fix krnn. hariyt chtgpt krnn, git, cmd ek use krnn ehm.
+
+me kiypu wachana utubut balnnon.
+
+
 ## Create Node The App
+
 
 > Create a new folder , "backend" or, anything
 
@@ -72,7 +116,7 @@ but that should be connected to the app.js
 _ask chatgpt_
 `in a node app . when we have a userRoute.js. how do we include it in app.js`
 
-#### now suppose we need to get all the users from db.
+#### now ,suppose we need to get all the users from db.
 
 we need to call this in postman
 
