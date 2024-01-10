@@ -3,11 +3,12 @@ const app = express();
 
 
 
-const mongoose = require("mongoose");
 const path = require("path");
 const dotenv = require("dotenv");
 const envPath = path.resolve(__dirname, ".", ".env");
 dotenv.config({ path: envPath });
+
+const mongoose = require("mongoose");
 const URL = process.env.MONGODB_URL;
 mongoose.connect(URL);
 const connection = mongoose.connection;
